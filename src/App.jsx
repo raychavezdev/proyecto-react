@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <h1>Lista de Criptomonedas</h1>
-      <ul className="cripto-list">
+      <ul className="cripto-grid">
         {criptos.map(({id, name, priceUsd },i) => (
          <Cripto index={i} key={id} name={name} priceUsd={priceUsd}/>
         ))}
