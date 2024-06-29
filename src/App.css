@@ -4,13 +4,18 @@
 
 body {
   margin: 0;
-  background-color: #363795;
+  background-color: #373950;
+  background: linear-gradient(#1b3f52, #2c2d4e);
   padding: 2em 5em ;
 }
 
 h1{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-align: center;
+}
+
+p{
+  margin: 0;
 }
 
 .cripto-grid {
@@ -18,17 +23,33 @@ h1{
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
 }
 
 .cripto {
-  border: 1px solid rgb(242, 3, 242);
+  border: 1px solid rgb(58, 145, 140);
   padding: 1rem;
-  background: linear-gradient(to right, #005c97, #363795);
+  background: linear-gradient(#1b3f52, #2c2d4e);
   color: #fff;
 }
 
+.cripto-name{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cripto p{
+  color: rgb(58,145,140);
+}
+
 .cripto span{
-    display: block;
+  color: antiquewhite;
+}
+
+span.cripto-up{
+  color: greenyellow;
+}
+span.cripto-down{
+  color: tomato;
 }
