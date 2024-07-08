@@ -15,10 +15,11 @@ const usePetition = (endpoint) => {
             .then((data) => {
                 setData(data.data.data);
                 setLoading(false)
+                console.log('yeah')
             })
             .catch((error) => {
+                console.error('Algo salio mal ',error);
                 setLoading(false)
-                console.error(error);
             })
     },[]);
 

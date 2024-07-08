@@ -3,14 +3,15 @@ import "./Cuadricula.css";
 import usePetition from "../hooks/usePetition";
 
 function Cuadricula() {
-  const [criptos,loadCriptos] = usePetition("assets");
-
-  if (!criptos)
+  const [criptos, loadingCriptos] = usePetition("assets");
+console.log(loadingCriptos)
+  if (!criptos) {
     return (
       <>
         <span>Cargando...</span>
       </>
     );
+  }
 
   return (
     <>
