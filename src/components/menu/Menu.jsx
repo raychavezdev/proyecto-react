@@ -21,7 +21,7 @@ const Menu = () => {
         <li>
          <a href="" onClick={()=>{
           localStorage.removeItem("tokenEDmarket")
-          navigation("/login")
+          navigation("/")
          }}>Cerrar sesion</a>
         </li>
       </ul>
